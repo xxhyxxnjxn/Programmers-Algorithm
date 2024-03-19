@@ -3,5 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         solution.solution("banana");
+
+        System.out.println("test");
     }
 }
