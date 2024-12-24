@@ -10,15 +10,17 @@ import java.util.StringTokenizer;
 public class Backjoon1940 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //Scanner와 버퍼리더의 차이 -> 스캐너보다 조금 더 빠름
         int n = Integer.valueOf(br.readLine());
         int m = Integer.valueOf(br.readLine());
 
         StringTokenizer st = new StringTokenizer(br.readLine());
+        // 띄어쓰기로 여러 문자열을 받을 떄
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = Integer.valueOf(st.nextToken());
         }
-        Arrays.sort(a);
+        Arrays.sort(a); // 정렬을 꼭 해야한다.
 
         int i=0;
         int j=n-1;
