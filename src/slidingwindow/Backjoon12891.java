@@ -1,4 +1,4 @@
-package src.towpointer;
+package src.slidingwindow;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,6 +38,7 @@ public class Backjoon12891 {
         //슬라이딩 윈도우
         for(int i=p; i<s; i++){
             int j = i-p;
+            System.out.println(i);
             check(dna[i]);
             remove(dna[j]);
 
