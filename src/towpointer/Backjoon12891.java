@@ -51,32 +51,31 @@ public class Backjoon12891 {
     private static void remove(char c) {
         switch(c){
             case 'A':
-                myArr[0]++;
                 if(myArr[0]==checkArr[0]){
                     checkSecret--;
-                    myArr[0]--;
                 }
+                myArr[0]--;
                 break;
             case 'C':
-                myArr[1]++;
                 if(myArr[1]==checkArr[1]){
                     checkSecret--;
-                    myArr[1]--;
+
                 }
+                myArr[1]--;
                 break;
             case 'G':
-                myArr[2]++;
                 if(myArr[2]==checkArr[2]){
                     checkSecret--;
-                    myArr[2]--;
+
                 }
+                myArr[2]--;
                 break;
             case 'T':
-                myArr[3]++;
                 if(myArr[3]==checkArr[3]){
                     checkSecret--;
-                    myArr[3]--;
+
                 }
+                myArr[3]--;
                 break;
         }
     }
